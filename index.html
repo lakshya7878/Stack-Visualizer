@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stack</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section>
+    <div class="container">
+      <div class="heading">
+        Stack
+      </div>
+      <div class="desc">
+        Is a conceptual structure consisting of a set of
+        homogeneous elements and is based on the principle of last in first out
+        (LIFO). It is a commonly used abstract data type with two major operations,
+        namely push and pop. Push and pop are carried out on the topmost element, 
+        which is the item most recently added to the stack. The push operation adds 
+        an element to the stack while the pop operation removes an element from the 
+        top position. The stack concept is used in programming and memory organization 
+        in computers.
+      </div>
+      <div class="create-stack">
+        <button class="action-button" id="create_stack">Create Stack</button>
+      </div>
+      <div class="stack d-none" id="stack">
+        <div class="stack-controls">
+          <div class="stack-add-block d-flex justify-content-between">
+            <input type="text" class="stack-add" id="node_value" placeholder="Add something to stack">
+            <button class="stack-add-btn action-button" id="push">Push()</button>
+          </div>
+          <div class="d-flex justify-content-between align-items-end">
+            <div class="info">
+              <b>Stack Length: </b>
+              <b id="stack_length"></b>
+            </div>
+            <button class="pop action-button" id="pop">Pop()</button>
+          </div>
+        </div>
+        <div class="stack-items" id="stack_items">
+          <div class="no-nodes" id="for_empty">Empty</div>
+        </div>
+        <div id="output" class="output"></div>
+      </div>
+    </div>
+  </section>
+  <script src="stack.js"></script>
+</body>
+</html>
